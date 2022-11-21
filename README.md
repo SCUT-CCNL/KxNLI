@@ -1,19 +1,21 @@
 ## The steps to run are as follows:
 
-1. Obtain dataset from https://github.com/OanaMariaCamburu/e-SNLI ;
-Extract rationlaes, refer to https://github.com/SCUT-CCNL/Expl-NLI;
+1. Data processing
+        1.1 Obtain dataset from https://github.com/OanaMariaCamburu/e-SNLI ;
+        
+        1.2 Extract rationlaes: refer to https://github.com/SCUT-CCNL/Expl-NLI;
 
-2. Process the conceptnet knowledge graph,
+2. Processing the knowledge graph (ConceptNet)
 
-    2.1 Use extract_cpnet.py to extract concepts;
+    2.1 Using extract_cpnet.py to extract concepts from ConceptNet;
     
-    2.2 Use graph_construction.py to construct the graph corresponding to conceptnet;
+    2.2 Us graph_construction.py to construct the corresponding graph of ConceptNet;
     
-    2.3 Use snli_ground_concepts_simple.py to extract the concepts in the SNLI dataset
+    2.3 Using snli_ground_concepts_simple.py to extract the concepts in the e-SNLI dataset;
     
-    2.4 Use snli-diff_find_neighbors.py to construct the subgraph corresponding to SNLI;
+    2.4 Using snli-diff_find_neighbors.py to construct the subgraph of each sample in e-SNLI;
     
-    2.5 Use snli_filter_triple.py to filter the subgraph to obtain the final subgraph to be used in this article;
+    2.5 Using snli_filter_triple.py to obtain the final subgraph by the rule introduced in our paper;
     
 3. Train the model
     3.1 Download the corresponding version of gpt2 models. "https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-XXX.
