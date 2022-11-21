@@ -21,6 +21,7 @@
     2.6 Using snli_filter_triple.py to obtain the final subgraph by the rule introduced in our paper;
     
 3. Model train
+
     3.1 cd ./train and eval/
     
     3.2 Download the corresponding files of gpt2 model from "https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-XXX;
@@ -28,6 +29,7 @@
     3.3 Train the KxNLI model using snli_main.py with default parameters;
     
 4. Model inference
+
     4.1 cd ./train and eval/
     
     4.2 Using snli_inference.py for model inference with default parameters;
@@ -38,6 +40,7 @@
     
 5. Transfer performance: replace the SNLI dataset with the MultiNLI dataset, and then perform the above steps;
 6. Execute the idea of this article on the vanilla seq2seq model
+
     6.1 cd ./vanilla_seq2seq/
     
     6.2 Prepare the required data and save it in the ./vanilla_seq2seq/data directory
