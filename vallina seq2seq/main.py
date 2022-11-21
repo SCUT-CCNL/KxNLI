@@ -8,7 +8,7 @@ from data import snli_Data
 import numpy as np
 from tqdm import tqdm
 import config as argumentparser
-
+ 
 import os
 # os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 config = argumentparser.ArgumentParser()
