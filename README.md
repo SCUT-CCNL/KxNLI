@@ -12,13 +12,13 @@
     
     2.2 Using extract_cpnet.py to extract concepts from ConceptNet;
     
-    2.3 Us ./process/graph_construction.py to construct the corresponding graph of ConceptNet;
+    2.3 Us graph_construction.py to construct the corresponding graph of ConceptNet;
     
-    2.4 Using ./process/snli_ground_concepts_simple.py to extract the concepts in the e-SNLI dataset;
+    2.4 Using snli_ground_concepts_simple.py to extract the concepts in the e-SNLI dataset;
     
-    2.5 Using ./process/snli-diff_find_neighbors.py to construct the subgraph of each sample in e-SNLI;
+    2.5 Using snli-diff_find_neighbors.py to construct the subgraph of each sample in e-SNLI;
     
-    2.6 Using ./process/snli_filter_triple.py to obtain the final subgraph by the rule introduced in our paper;
+    2.6 Using snli_filter_triple.py to obtain the final subgraph by the rule introduced in our paper;
     
 3. Model train
     3.1 cd ./train and eval/
