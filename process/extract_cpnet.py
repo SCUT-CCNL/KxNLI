@@ -3,7 +3,6 @@ import json
 
 relation_mapping = dict()
 
-
 def load_merge_relation():
     config = configparser.ConfigParser()
     config.read("paths.cfg")
